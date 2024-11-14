@@ -1,0 +1,47 @@
+/* Navbar styling */
+nav {
+    background-color: #e3cf81; /* Tailwind blue-600 */
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: brown;
+}
+
+a {
+    font-size: 1.125rem; /* Tailwind text-lg */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7796d5; /* Tailwind gray-300 */
+}
+
+/* Container for flex layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Flex styling for links */
+.flex {
+    display: flex;
+    gap: 2rem; /* Adds spacing between links */
+}
+
+@media (max-width: 768px) {
+    /* Responsive: Stack items in smaller screens */
+    .container {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .flex {
+    flex-direction: column;
+    gap: 1rem;
+    }
+}

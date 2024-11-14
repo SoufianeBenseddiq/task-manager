@@ -1,1 +1,25 @@
-<p>nav-bar works!</p>
+<nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo (h1) -->
+        <h1 class="text-white text-3xl font-bold cursor-pointer">TaskManager</h1>
+
+        <!-- Navbar Links -->
+        <div class="flex space-x-8">
+        <a
+            routerLink="/tasks"
+            class="text-white text-lg hover:text-gray-300 transition-colors"
+            >Tasks</a
+        >
+        <a
+            routerLink="/taskform"
+            class="text-white text-lg hover:text-gray-300 transition-colors"
+            >Add Task</a
+        >
+        <a
+            routerLink="/userprofile"
+            class="text-white text-lg hover:text-gray-300 transition-colors"
+            >Profile</a
+        >
+        </div>
+    </div>
+</nav>
